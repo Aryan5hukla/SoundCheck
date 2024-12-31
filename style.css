@@ -1,0 +1,488 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.nav-bar {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    /* border: 5px solid red; */
+    position: fixed;
+    z-index: 100;
+    margin-top: 12px;
+}
+.logo {
+    height: 62px;
+    margin-left: 14px;
+}
+
+.home {
+    height: 30px;
+    position: relative;
+    top: 10px;
+}
+.search {
+    background-color: #2A2A2A;
+    border: 0px solid #ffffff00;
+    border-radius: 50px;
+    padding: 10px 50px;
+    color: aliceblue;
+    width: 400px;
+    height: 40px;
+    margin-left: 5px;
+    font-size: 16px;
+    
+}
+
+.icon-input {
+    background-image: url('Image/Search-icon.svg');
+    background-repeat: no-repeat;
+    background-size: 30px 35px;
+    background-position: 10px center;
+    padding-left: 45px;
+}
+
+.nav-btn {
+    margin-right: 25px;
+}
+
+.Sign-Up {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(179 , 179 ,179);
+    padding: 11px 20px;
+    border-radius: 21px;
+    border: 0px;
+    background-color: black;
+}
+
+.Log-In {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(0 , 0 , 0);
+    padding: 13px 25px;
+    border-radius: 25px;
+    background-color: #fff;
+}
+
+.cont {
+    display: flex;
+    padding: 10px;
+    padding-top: 70px;
+    position: absolute;
+    max-width: 100%;
+}
+
+.side-bar {
+    /* height: 650px; */
+    height: 80vh;
+    width: 26vw;
+    width: 400px;
+    background-color: #121212;
+    border-radius: 10px;   
+    position: fixed;
+}
+
+.playlist {
+    overflow-y: scroll;
+    height: 68vh;
+    margin-right: 5px;
+    
+}
+
+.playlist::-webkit-scrollbar {
+    width: 10px;
+}
+.playlist::-webkit-scrollbar-thumb {
+    background-color: #ffffff10;
+    border-radius: 10px;
+}
+
+.head {
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.head >div > img {
+    height: 30px;
+}
+
+.head >div > h3 {
+    color: rgb(179 , 179 ,179);
+    display: inline;
+    position: relative;
+    top: -8px;
+    left: 5px;
+}
+
+.song {
+    font-size: 18px ;
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.song:hover {
+    background-color: #2A2A2A;
+}
+
+.bg {
+    background-color: #ff000038;
+}
+
+.song > ul > li {
+    list-style: none;
+}
+
+.Name {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+}
+
+.Name :first-child {
+    max-width: 20vw;
+}
+
+.timing {
+    font-size: 16px;
+}
+
+.Artist {
+    font-size: 12px;
+    color: #ffffff6f;
+}
+.main {
+    background-color: green;
+    width: 70vw;
+    /* width: 1086px; */
+    background-color: #121212;
+    margin-left: 410px;
+    border-radius: 10px; 
+    height: 80vh ;
+    overflow-y: scroll;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.main::-webkit-scrollbar {
+    width: 8px;
+}
+.main::-webkit-scrollbar-thumb {
+    background-color: #ffffff10;
+    border-radius: 10px;
+}
+
+.card {
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.166);
+    width: 220px;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 0.1s ease;
+}
+
+.card:hover {
+    background-color: #ffffff4a;
+}
+
+.img > img {
+    border-radius: 10px;
+    padding-bottom: 10px;
+}
+.txt > p{
+    font-weight: 700;
+    /* font-size: 200px; */
+    text-align: center;
+}
+
+.SongControl {
+    background-color: black; 
+    position: fixed; 
+    bottom: 0;
+    /* left: 0; */
+    width: 100%; 
+    height: 10vh; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.control-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 12vw;
+}
+
+.control-btn img {
+    cursor: pointer;
+}
+
+.seek {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.seekbar {
+    width: 50vw;
+    /* border: solid grey 2px; */
+    background-color: grey;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    height: 5px;
+    cursor: pointer;
+}
+
+.fill {
+    background-color: #fff;
+    /* border: solid #fff 3px; */
+    width: 0% ;
+    height: 5px;
+    transition: width 0.1sec ease;
+    z-index: 10;
+    position: relative;
+    /* margin-bottom: 10px; */
+    bottom: 15px;
+    border-radius: 10px;
+}
+
+.knob {
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    left: 0%;
+    bottom: 5px;
+    transition: left 0.1sec ease;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.current-time , .end-time{
+    position: relative;
+    bottom: 6px;
+}
+
+.displaycard , .volume-bar{
+    width: 30vw;
+}
+.ham , .close {
+    display: none;
+}
+
+.volume-bar {
+    display: flex;
+    /* margin-left: 100px; */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.volume-slider {
+    /* -webkit-appearance: none; */
+    width: 100%;
+    height: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: width 0.3s ease;
+}
+
+
+/* Style the thumb (draggable circle) */
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none;
+    width: 15px; /* Thumb width */
+    height: 15px; /* Thumb height */
+    border-radius: 50%; /* Circular thumb */
+    background: #fff; /* Thumb color */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+
+
+
+
+/* responsiveness */
+@media only screen and (min-width:1024px){
+    .side-bar {
+        left: 0.5% !important;
+    }
+}
+
+@media only screen and (max-width:1280px){
+    .main {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+    .card {
+        padding: 8px;
+        width: 180px;
+        height: 220px;
+    }
+    .img > img {
+        width: 100%;
+        max-width: 150px;
+    }
+}
+/* for tablet */
+@media only screen and (max-width:1024px) {
+    .logo {
+        height: 40px;
+        margin: 0px;
+    }
+
+    .nav-btn , .home , .volume-bar , .plus {
+        display: none;
+    }
+    
+    .side-bar {
+        /* background-color: red; */
+        position: absolute;
+        left: -150%;
+        transition: all 0.3s ease;
+        z-index: 1;
+        width: 500px;
+        border: 2px solid black;
+    }
+
+    .main {
+        width: 100vw;
+        margin-left: 0px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .card {
+        width: auto;
+        height: auto;
+        padding: 8px;
+    }
+
+    .img > img {
+        width: 100%;
+        height: auto;
+        max-width: 200px;
+    }
+    .wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .SongControl {
+        width: 98vw;
+        /* flex-direction: column; */
+        padding: 0px;
+        position: absolute;
+        background-color: red;
+        border-radius: 10px;
+        margin: auto;
+    }
+
+    .control-btn {
+        margin-left: 60px;
+        position: relative;
+        top: 10px;
+        gap: 40px;
+    }
+
+    .seek {
+        width: 98vw;
+        padding: 0px 10px;
+
+    }
+    .seekbar {
+        margin: auto;
+        width: 98vw;
+    }
+    .displaycard {
+        position: absolute;
+        bottom:45px ;    
+        left: 60px;
+        width: 50vw;
+        /* z-index: 20; */
+    }
+
+    .current-time , end-time {
+        margin-top: 10px
+    }
+    
+    .dcname {
+        font-size: 15px;
+    }
+
+    .ham , .close {
+        display: flex;
+    }
+}
+
+/* for mobile */
+@media only screen and (max-width: 600px) {
+    .side-bar {
+        width: 300px;
+    }
+
+    .search{
+        position: absolute;
+        left: 82%;
+        transition: all 0.2s ease;
+        z-index: 1;
+        top: 0px;
+    }
+    .main {
+        height: 78vh;
+        /* width: 100%; */
+        display: grid;
+        /* flex-direction: column; */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile */
+        padding: 10px;
+    }
+    .control-btn {
+        width: 15px;
+    }
+    .displaycard {
+        position: absolute;
+        bottom: 45px;
+        left: 20px;
+        width: 40vw;
+    }
+
+}

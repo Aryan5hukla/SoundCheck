@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUNDCHECK - Web Player: Music for everyone</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-bar">
+        <img class="ham" width="30px" src="/Image/hamburger.svg" alt="">
+        <div>
+            
+            <img class="logo" src="Image/SoundCheckLogo.svg" alt="">
+        </div>
+        <div class="c-bar">
+            
+            <img class="home" src="Image/home.svg" alt="Home">
+            
+            <input class="search icon-input" type="text" placeholder="What do you want to play ?">
+        </div>
+        <div class="nav-btn">
+            <button class="Sign-Up">Sign up</button>
+            <button class="Log-In">Log in</button>
+        </div>
+    </div>
+    <div class="cont">
+        <div class="side-bar">
+            <div class="head">
+                <div>
+                    <img src="Image/library.svg" alt="">
+                    <h3>Your Playlist</h3>
+                </div>
+                <div>
+                    <img class="close" src="Image/close.svg" alt="">
+                    <img class="plus" src="Image/Add.svg" alt="">
+                </div>   
+            </div>
+        
+            <div class="playlist">
+                <!-- <div class="song">
+                    <ul class="Name">
+                        <li id="song-add">Warcry</li> 
+                        <li class="timing">5:00</li>
+                    </ul>
+                    <div class="Artist">KING</div>
+                </div> -->
+            </div>
+        </div>
+        <div class="main">
+            <!-- <div data-folder="MyMix2024" class="card">
+                <div class="img">
+                    <img width="200px" src="/Image/MyMix2024.png" alt="MyMix2024">
+                </div>
+                <div class="txt"><p>My Mix 2024</p></div>
+            </div>
+            <div data-folder="HarddriveVol.2" class="card">
+                <div class="img">
+                    <img width="200px" src="/Image/Harddrive Vol 2.png" alt="MyMix2024">
+                </div>
+                <div class="txt"><p>Harddrive Vol. 2</p></div>
+            </div> -->
+            
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="SongControl">
+
+            <div class="displaycard">
+                <div id="theSong" class="Name dcname">5 Fingers of Death</div>
+                <div id="ArtistName" class="Artist">Vichaar</div>
+            </div>
+            <div class="panel">
+                <div class="control-btn">
+                    <img id="previous" width="20px" src="/Image/previous.svg" alt="Previous-Song">
+                    <img id="play" width="20px" src="/Image/play.svg" alt="Play/Pause">
+                    <img id="next" width="20px" src="/Image/next.svg" alt="Next-Song">
+                </div>
+                <div class="seek">
+                    <div class="current-time">0:00</div>
+                    <div class="seekbar">
+                        <div class="knob">
+                            
+                        </div>
+                        <div class="fill"></div>
+                    </div>
+                    <div class="end-time">4:32</div>
+                </div>  
+            </div>
+    
+            <div class="volume-bar">
+                <img class="volimg" width="25px" src="/Image/volume.svg" alt="">
+                <div class="range">
+                    <input class="volume-slider" type="range" name="volume-bar" value="100">
+                </div>
+            </div>
+    </div>
+    
+    </div>
+    
+    <script src="script.js"></script>
+    <!-- <script src="copy.js"></script> -->
+</body>
+</html>
